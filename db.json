@@ -1,0 +1,332 @@
+{
+  "imageList": [
+    {
+      "id": 1,
+      "name": "Welcome",
+      "description": "Welcome to in-books. You will find out the books of your choice here.",
+      "imgUrl": "https://t4.ftcdn.net/jpg/06/10/26/15/360_F_610261529_vk9kf4ooTP5eSsQdOEyB4miRHn1YWCD1.jpg",
+      "clickUrl": "http://localhost:3001",
+      "role": "member,loggedUser,user"
+    },
+    {
+      "id": 2,
+      "name": "Login",
+      "description": "Login here to rent or buy the vast collection of books. Check the earliest when we can deliver it to you.",
+      "imgUrl": "https://peterorsel.com/wp-content/uploads/2023/01/benjamin-voros-phIFdC6lA4E-unsplash.jpg",
+      "clickUrl": "http://localhost:3001",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "Membership",
+      "description": "Get Membership to access our vast library at minimum prices. Check out the plans here.",
+      "imgUrl": "https://images.unsplash.com/photo-1433477155337-9aea4e790195?ixlib=rb-4.0.3",
+      "clickUrl": "http://localhost:3001",
+      "role": "loggedUser,user"
+    },
+    {
+      "id": 4,
+      "name": "Help",
+      "description": "New here? Don't worry. Go through this section to understand the different features we provide and the terms and conditions",
+      "imgUrl": "https://plus.unsplash.com/premium_photo-1666726721652-a15e685e48a0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vcnxlbnwwfHwwfHx8MA%3D%3D",
+      "clickUrl": "http://localhost:3001",
+      "role": "admin,member,loggedUser,user"
+    },
+    {
+      "id": 5,
+      "name": "Browse",
+      "description": "Browse through our sections here",
+      "imgUrl": "https://plus.unsplash.com/premium_photo-1676496046182-356a6a0ed002?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlc3xlbnwwfHwwfHx8MA%3D%3D",
+      "clickUrl": "http://localhost:3001",
+      "role": "admin,member,loggedUser,user"
+    }
+  ],
+
+  "genre": [
+    {
+      "id": "1",
+      "name": "Action",
+      "img": "https://user-images.githubusercontent.com/17777237/54872929-c67d0b80-4dd4-11e9-83ed-9b6e88fe065a.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "2",
+      "name": "Adventure",
+      "img": "https://cdn-icons-png.flaticon.com/512/6750/6750462.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "3",
+      "name": "Drama",
+      "img": "https://cdn-icons-png.freepik.com/512/8363/8363675.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "4",
+      "name": "Fantasy",
+      "img": "https://cdn.iconscout.com/icon/premium/png-256-thumb/fantasy-1709964-1452291.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "5",
+      "name": "Horror",
+      "img": "https://freerangestock.com/sample/76017/halloween-bats-icon-means-spooky-horror-symbol.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "6",
+      "name": "Mystery",
+      "img": "https://cdn-icons-png.flaticon.com/512/2040/2040703.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "7",
+      "name": "Romance",
+      "img": "https://cdn-icons-png.flaticon.com/512/9656/9656139.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "8",
+      "name": "Sports",
+      "img": "https://cdn-icons-png.flaticon.com/512/7438/7438654.png",
+      "additionalInfo": "No info yet"
+    }
+  ],
+
+  "theme": [
+    {
+      "id": "1",
+      "name": "Art & Architecture",
+      "img": "https://static.thenounproject.com/png/4139825-200.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "2",
+      "name": "Detective",
+      "img": "https://www.shutterstock.com/image-vector/black-detective-icon-vector-260nw-573069310.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "3",
+      "name": "Historical",
+      "img": "https://static.thenounproject.com/png/4211989-200.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "4",
+      "name": "Medical",
+      "img": "https://cdn-icons-png.freepik.com/256/809/809957.png?semt=ais_hybrid",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "5",
+      "name": "Military",
+      "img": "https://cdn0.iconfinder.com/data/icons/vietnam/512/vietnam-travel-03-512.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "6",
+      "name": "Music",
+      "img": "https://i.pinimg.com/originals/00/cf/2f/00cf2f7888b6f414c774ce192c723ef0.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "7",
+      "name": "Mythology",
+      "img": "https://cdn3.iconfinder.com/data/icons/ancient-greek-mythology-monsters-and-creatures-6/140/greek-20-512.png",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "8",
+      "name": "Biography",
+      "img": "https://cdn4.iconfinder.com/data/icons/book-genres-3/340/biography_literature_book_paper_writing_story_diary_history-512.png",
+      "additionalInfo": "No info yet"
+    }
+  ],
+
+  "authors": [
+    {
+      "id": "1",
+      "name": "Dan Brown",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dan_Brown_bookjacket_cropped.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "2",
+      "name": "Chetan Bhagat",
+      "img": "https://yt3.googleusercontent.com/ytc/AIdro_kr4Xv6GpEaeOVO9n6gQ29NDGs4YuW2HJkGOSqaZ1IAoA=s900-c-k-c0x00ffffff-no-rj",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "3",
+      "name": "Amish Tripathi",
+      "img": "https://images.moneycontrol.com/static-mcnews/2022/10/amish-tripathi-author.jpg?impolicy=website&width=1600&height=900",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "4",
+      "name": "Paulo Coehlo",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Paulo_Coelho_2007-04-09_001_%28cropped%29.jpg/1200px-Paulo_Coelho_2007-04-09_001_%28cropped%29.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "5",
+      "name": "JK Rowlingqwqdqadadadada 12ws",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1061157246.jpg",
+      "additionalInfo": "No info yetalshjaoxjhalxjalxjLXHLXHkxhLXHKXHKZcbzkjchbKXHBkBlhlhjlhLHlhHLHhnlz"
+    },
+    {
+      "id": "6",
+      "name": "Sidney Sheldon",
+      "img": "https://upload.wikimedia.org/wikipedia/en/f/f6/Sidney_Sheldon.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "7",
+      "name": "Khaled Hosseini",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Khaled_Hosseini_%289039707294%29.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "8",
+      "name": "Shakespeare",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/william-shakespeare-194895-1-402.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "9",
+      "name": "JK Rowlingqwqdqadadadada 12ws",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1061157246.jpg",
+      "additionalInfo": "No info yetalshjaoxjhalxjalxjLXHLXHkxhLXHKXHKZcbzkjchbKXHBkBlhlhjlhLHlhHLHhnlz"
+    },
+    {
+      "id": "10",
+      "name": "Sidney Sheldon",
+      "img": "https://upload.wikimedia.org/wikipedia/en/f/f6/Sidney_Sheldon.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "11",
+      "name": "Khaled Hosseini",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Khaled_Hosseini_%289039707294%29.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "12",
+      "name": "Shakespeare",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/william-shakespeare-194895-1-402.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "13",
+      "name": "JK Rowlingqwqdqadadadada 12ws",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1061157246.jpg",
+      "additionalInfo": "No info yetalshjaoxjhalxjalxjLXHLXHkxhLXHKXHKZcbzkjchbKXHBkBlhlhjlhLHlhHLHhnlz"
+    },
+    {
+      "id": "14",
+      "name": "Sidney Sheldon",
+      "img": "https://upload.wikimedia.org/wikipedia/en/f/f6/Sidney_Sheldon.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "10",
+      "name": "Sidney Sheldon",
+      "img": "https://upload.wikimedia.org/wikipedia/en/f/f6/Sidney_Sheldon.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "11",
+      "name": "Khaled Hosseini",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Khaled_Hosseini_%289039707294%29.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "12",
+      "name": "Shakespeare",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/william-shakespeare-194895-1-402.jpg",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "13",
+      "name": "JK Rowlingqwqdqadadadada 12ws",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1061157246.jpg",
+      "additionalInfo": "No info yetalshjaoxjhalxjalxjLXHLXHkxhLXHKXHKZcbzkjchbKXHBkBlhlhjlhLHlhHLHhnlz"
+    },
+    {
+      "id": "14",
+      "name": "Sidney Sheldon",
+      "img": "https://upload.wikimedia.org/wikipedia/en/f/f6/Sidney_Sheldon.jpg",
+      "additionalInfo": "No info yet"
+    }
+  ],
+
+  "category": [
+    {
+      "id": "1",
+      "name": "Novels",
+      "img": "https://picsum.photos/id/237/200/300",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "2",
+      "name": "Poems",
+      "img": "https://picsum.photos/id/238/200/300",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "3",
+      "name": "Cooking",
+      "img": "https://picsum.photos/id/239/200/300",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "4",
+      "name": "Educational",
+      "img": "https://picsum.photos/id/240/200/300",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "5",
+      "name": "Music",
+      "img": "https://picsum.photos/id/241/200/300",
+      "additionalInfo": "No info yetalshjaoxjhalxjalxjLXHLXHkxhLXHKXHKZcbzkjchbKXHBkBlhlhjlhLHlhHLHhnlz"
+    },
+    {
+      "id": "6",
+      "name": "Comics",
+      "img": "https://picsum.photos/id/242/200/300",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "7",
+      "name": "Politics",
+      "img": "https://picsum.photos/id/243/200/300",
+      "additionalInfo": "No info yet"
+    },
+    {
+      "id": "8",
+      "name": "Finance",
+      "img": "https://picsum.photos/id/244/200/300",
+      "additionalInfo": "No info yet"
+    }
+  ],
+
+  "plays": [
+    { "id": "1", "displayName": "Play 1" },
+    { "id": "2", "displayName": "Play 2" },
+    { "id": "3", "displayName": "Play 3" }
+  ],
+
+  "fields": [
+    {
+      "id": "1",
+      "displayName": "Field 1",
+      "fieldName": "field1",
+      "fieldType": {
+        "id": "1",
+        "name": "TextField"
+      }
+    }
+  ]
+}
