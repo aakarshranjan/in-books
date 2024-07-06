@@ -9,9 +9,16 @@ import Typography from "@mui/material/Typography";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
+// import { useSelector, useDispatch } from "react-redux";
 
 export default function MediaControlCard({ name, img }) {
   const theme = useTheme();
+
+  //get RTK's search result through reducer
+  // const count = useSelector(
+  //   (state) => state.searchApi.queries['getValueByParams("books?authorId=1")']
+  // );
+  // console.log(count);
 
   return (
     <Card sx={{ display: "flex" }}>

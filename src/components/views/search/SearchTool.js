@@ -11,6 +11,7 @@ import { Box } from "@mui/material";
 import Button from "@mui/material/Button";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import MultiSelectUI from "../../generic/MultiSelectItemUI";
+import { useLazyGetBooksByCustomSearchQuery } from "../../../services/data";
 
 const SearchTool = () => {
   const [selectedItems, setSelectedItems] = React.useState({
@@ -26,6 +27,8 @@ const SearchTool = () => {
     genre: [],
     theme: [],
   });
+
+  const [trigger, { data }] = useLazyGetBooksByCustomSearchQuery(selectedItems);
 
   //API call for now. But we will get the data from redux later. Calls for these group infos are already happening at other components
   React.useEffect(() => {
@@ -84,6 +87,10 @@ const SearchTool = () => {
     setSelectedItems({ ...selectedItems, [groupName]: newArr });
   };
 
+  const searchBooks = () => {
+    trigger();
+  };
+
   return (
     <Box
       sx={{
@@ -95,7 +102,11 @@ const SearchTool = () => {
     >
       <Box sx={{ display: "flex", justifyContent: "space-between", p: "1vw" }}>
         <Typography variant="h6">Search Filter</Typography>
-        <Button variant="outlined" startIcon={<SearchRoundedIcon />}>
+        <Button
+          variant="outlined"
+          startIcon={<SearchRoundedIcon />}
+          onClick={searchBooks}
+        >
           Search
         </Button>
       </Box>

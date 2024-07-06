@@ -2,28 +2,32 @@ import React from "react";
 import { Box, Divider } from "@mui/material";
 import AuthorInfo from "./AuthorInfo";
 import MultiActionAreaCard from "../../generic/Card";
+import { useGetBooksByAuthorQuery } from "../../../services/data";
 
 const AuthorDetails = ({ selectedAuthor }) => {
   const [authorBooks, setAuthorBooks] = React.useState([]);
+  const { data, error, isLoading } = useGetBooksByAuthorQuery(
+    `${selectedAuthor.id}`
+  );
 
-  React.useEffect(() => {
-    async function fetchData() {
-      const res = await fetch(
-        `http://localhost:3003/books?authorId=${selectedAuthor.id}`
-      );
-      const data = await res.json();
-      console.log("in b", data);
-      setAuthorBooks(data);
-    }
-    fetchData();
-  }, [selectedAuthor]);
-  console.log(authorBooks);
+  // React.useEffect(() => {
+  //   async function fetchData() {
+  //     const res = await fetch(
+  //       `http://localhost:3003/books?authorId=${selectedAuthor.id}`
+  //     );
+  //     const data = await res.json();
+  //     console.log("in b", data);
+  //     setAuthorBooks(data);
+  //   }
+  //   fetchData();
+  // }, [selectedAuthor]);
+  // console.log(authorBooks);
   return (
     <Box sx={{ height: "90vh", overflowY: "auto" }}>
       <AuthorInfo author={selectedAuthor} />
       <Divider />
       <Box sx={{ paddingTop: "2vh" }}>
-        {authorBooks.map((book) => (
+        {data?.map((book) => (
           <React.Fragment key={book.id}>
             <MultiActionAreaCard {...book} />
             <Divider variant="inset" />

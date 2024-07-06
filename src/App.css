@@ -1,0 +1,30 @@
+.rotate {
+  animation: rotate-keyframes 0.5s linear;
+  color: rgba(0, 0, 0, 0.54);
+  transform: rotate(180deg);
+}
+
+.rotateBack {
+  animation: rotateBack-keyframes 0.5s linear;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+@keyframes rotate-keyframes {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateBack-keyframes {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}

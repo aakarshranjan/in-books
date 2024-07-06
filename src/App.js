@@ -6,9 +6,12 @@ import {
   createTheme,
   responsiveFontSizes,
 } from "@mui/material";
+import { getUIDesign } from "./utils/theme";
 import Landing from "./components/views/landing/Landing";
 import Header from "./components/generic/Header";
-import { getUIDesign } from "./utils/theme";
+import AuthorsComp from "./components/views/author";
+import SearchComp from "./components/views/search";
+import "./App.css";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = React.useState(false);
@@ -25,7 +28,9 @@ const App = () => {
         updateMode={(e) => setIsDarkMode(e.target.checked)}
       />
       <Box>
-        <Landing />
+        {/* <Landing /> */}
+        {/* <AuthorsComp /> */}
+        <SearchComp />
       </Box>
     </ThemeProvider>
   );
