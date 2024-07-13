@@ -11,7 +11,16 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 // import { useSelector, useDispatch } from "react-redux";
 
-export default function MediaControlCard({ name, img }) {
+export default function MediaControlCard({
+  name,
+  imgUrl,
+  id,
+  description,
+  author,
+  category,
+  genre,
+  theme: bookTheme,
+}) {
   const theme = useTheme();
 
   //get RTK's search result through reducer
@@ -24,8 +33,8 @@ export default function MediaControlCard({ name, img }) {
     <Card sx={{ display: "flex" }}>
       <CardMedia
         component="img"
-        sx={{ width: "10vw", height: "15vw" }}
-        image={img}
+        sx={{ width: "10vw", height: "10vw", objectFit: "contain" }}
+        image={imgUrl}
         alt={name}
       />
       <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -38,28 +47,12 @@ export default function MediaControlCard({ name, img }) {
             color="text.secondary"
             component="div"
           >
-            Mac Miller
+            {author.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" component="div">
+            {description}
           </Typography>
         </CardContent>
-        <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
-          <IconButton aria-label="previous">
-            {theme.direction === "rtl" ? (
-              <SkipNextIcon />
-            ) : (
-              <SkipPreviousIcon />
-            )}
-          </IconButton>
-          <IconButton aria-label="play/pause">
-            <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-          </IconButton>
-          <IconButton aria-label="next">
-            {theme.direction === "rtl" ? (
-              <SkipPreviousIcon />
-            ) : (
-              <SkipNextIcon />
-            )}
-          </IconButton>
-        </Box>
       </Box>
     </Card>
   );
